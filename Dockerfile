@@ -24,9 +24,6 @@ COPY . .
 RUN chmod +x mvnw
 
 # Jalankan mvnw clean install
-RUN ./mvnw clean install -DskipTests
-
-# Lalu jalankan package (bila masih perlu menghasilkan jar final)
 RUN ./mvnw clean package -DskipTests
 
 # Gunakan image JDK ringan untuk menjalankan aplikasi

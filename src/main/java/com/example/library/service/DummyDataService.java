@@ -29,7 +29,7 @@ public class DummyDataService {
     @Autowired
     private ProvincesRepository provincesRepository;
 
-    // @PostConstruct
+    @PostConstruct
     public void createDummyData() {
         // Daftar provinsi di Indonesia (contoh sebagian, bisa lengkapkan sesuai
         // kebutuhan)
